@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
-import Me from '../assets/Images/profile-img.png'
+import Me from '../assets/Images/me_favicon.png'
 
 
 const Box = styled(motion.div)`
@@ -44,7 +44,7 @@ display: flex;
     bottom: 0;
     left: 50%;
     transform: translate(-50%,0%);
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 `
@@ -81,7 +81,7 @@ const Intro = () => {
                 <Text>
                     <h1>Hi,</h1>
                     <h3>I'm Vageeshan.</h3>
-                    <h6>A full stack developer</h6>
+                    <h6>Welcome to my byte-sized portfolio.</h6>
                 </Text>
             </SubBox>
             <SubBox>

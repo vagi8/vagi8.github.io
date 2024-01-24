@@ -130,7 +130,10 @@ const Main = () => {
 
     const [click, setClick] = useState(false);
 
-    const handleClick = () => setClick(!click);
+    const handleClick = () => {
+        setClick(!click);
+        console.log("pressed click")
+    }
 
     return (
         <MainContainer>
@@ -159,7 +162,7 @@ const Main = () => {
                 whileTap={{scale: 0.9}}
                 
                 >
-                    Say hi..
+                    Lets Connect !
                 </motion.h2>
             </Contact>
             {/* <BLOG to="/blog">
