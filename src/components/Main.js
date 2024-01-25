@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-// import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styled, { keyframes } from 'styled-components'
 import LogoComponent from '../subComponents/LogoComponent'
 import PowerButton from '../subComponents/PowerButton'
@@ -36,47 +36,46 @@ right: calc(1rem + 2vw);
 text-decoration: none;
 z-index:1;
 `
-// const BLOG = styled(NavLink)`
-// color: ${props => props.theme.text};
-// position: absolute;
-// top: 50%;
-// right: calc(1rem + 2vw);
-// transform: rotate(90deg) translate(-50%, -50%);
-// text-decoration: none;
-// z-index:1;
-// `
-// const WORK = styled(NavLink)`
-// color: ${props => props.click ? props.theme.body : props.theme.text};
+const BLOG = styled(NavLink)`
+color: ${props => props.theme.text};
+position: absolute;
+top: 50%;
+right: calc(1rem + 2vw);
+transform: rotate(90deg) translate(-50%, -50%);
+text-decoration: none;
+z-index:1;
+`
+const WORK = styled(NavLink)`
+color: ${props => props.click ? props.theme.body : props.theme.text};
 
-// position: absolute;
-// top: 50%;
-// left: calc(1rem + 2vw);
-// transform: translate(-50%, -50%) rotate(-90deg) ;
-// text-decoration: none;
-// z-index:1;
-// `
+position: absolute;
+top: 50%;
+left: calc(1rem + 2vw);
+transform: translate(-50%, -50%) rotate(-90deg) ;
+text-decoration: none;
+z-index:1;
+`
 
-// const BottomBar = styled.div`
-// position: absolute;
-// bottom: 1rem;
-// left: 0;
-// right: 0;
-// width: 100%;
+const BottomBar = styled.div`
+position: absolute;
+bottom: 1rem;
+left: 0;
+right: 0;
+width: 50%;
+display: flex;
+justify-content: space-evenly;
+`
 
-// display: flex;
-// justify-content: space-evenly;
-// `
-
-// const ABOUT = styled(NavLink)`
-// color: ${props => props.click ? props.theme.body : props.theme.text};
-// text-decoration: none;
-// z-index:1;
-// `
-// const SKILLS = styled(NavLink)`
-// color: ${props => props.theme.text};
-// text-decoration: none;
-// z-index:1;
-// `
+const ABOUT = styled(NavLink)`
+color: ${props => props.click ? props.theme.body : props.theme.text};
+text-decoration: none;
+z-index:1;
+`
+const SKILLS = styled(NavLink)`
+color: ${props => props.theme.text};
+text-decoration: none;
+z-index:1;
+`
 
 const rotate = keyframes`
 from{
@@ -193,7 +192,7 @@ const Main = () => {
                 >
                     Work
                 </motion.h2>
-            </WORK>
+            </WORK> */}
             <BottomBar>
             <ABOUT to="/about" click={+click}>
                 <motion.h2
@@ -211,7 +210,7 @@ const Main = () => {
                     About.
                 </motion.h2>
             </ABOUT>
-            <SKILLS to="/skills">
+            {/* <SKILLS to="/skills">
                 <motion.h2
                 initial={{
                     y:200,
@@ -226,9 +225,9 @@ const Main = () => {
                 >
                     My Skills.
                 </motion.h2>
-            </SKILLS>
+            </SKILLS> */}
 
-            </BottomBar> */}
+            </BottomBar> 
 
             </Container>
             {click ? <Intro click={click} /> : null }

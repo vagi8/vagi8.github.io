@@ -8,7 +8,7 @@ import SocialIcons from '../subComponents/SocialIcons';
 import PowerButton from '../subComponents/PowerButton';
 import ParticleComponent from '../subComponents/ParticleComponent';
 import BigTitle from '../subComponents/BigTitlte'
-import astronaut from '../assets/Images/spaceman.png'
+import astronaut from '../assets/Images/profile-img.png'
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -25,7 +25,7 @@ const float = keyframes`
 `
 const Spaceman = styled.div`
 position: absolute;
-top: 10%;
+top: 22%;
 right: 5%;
 width: 20vw;
 animation: ${float} 4s ease infinite;
@@ -72,14 +72,14 @@ const AboutPage = () => {
             <img src={astronaut} alt="spaceman" />
         </Spaceman>    
         <Main>
-        I'm a front-end developer located in India. I love to create simple yet beautiful websites with great user experience.
+        I speak the secret languages of Java, Python, Javascript, and Typescript,  because human languages are too mainstream.
 <br /> <br/>
-I'm interested in the whole frontend stack Like trying new things and building great projects. I'm an independent freelancer and blogger. I love to write blogs and read books.
+With Angular and React guns in my left and right pocket, I've mastered the dark arts of SQL, NoSQL and cloud tools (AWS,Azure,MS SQL) to navigate the worlds of microservices.
 <br/> <br/>
-I believe everything is an Art when you put your consciousness in it. You can connect with me via social links.
+Dive into the riveting saga of my GitHub and LinkedIn to witness the epic tale of a developer who's just too cool for regular mortal stuff.
         </Main>
 
-        <BigTitle text="ABOUT" top="10%" left="5%" />
+        <BigTitle text="ABOUT" top="10%" right="5%" />
 
 
         </Box>
