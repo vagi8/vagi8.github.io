@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.62396fd0.css",
-    "main.js": "/static/js/main.47f187c1.js",
+    "main.js": "/static/js/main.967506cc.js",
     "static/media/u-said-it-v13-1167.mp3": "/static/media/u-said-it-v13-1167.becd66496be9c81ddf9d.mp3",
     "static/media/me_favicon.png": "/static/media/me_favicon.763b0ff823af3f6cf93b.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
     "static/css/main.62396fd0.css",
-    "static/js/main.47f187c1.js"
+    "static/js/main.967506cc.js"
   ]
 }
